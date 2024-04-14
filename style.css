@@ -1,0 +1,79 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.w-100{
+  height: 400px;
+}
+
+#navbarNavDropdown{
+  justify-content: end;
+}
+#hero a{
+  text-decoration: none;
+}
+.btn-get-started{
+  border: 2px solid #fdc134;
+  border-radius: 10px;
+}
+#hero a:hover{
+  background-color: transparent; 
+}
+#aboutsection{
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-image: url(https://alexamcleantech336.opened.ca/wp-content/uploads/sites/1168/2020/01/cropped-plush-design-studio-q10VITrVYUM-unsplash-scaled-2.jpg);
+}
+#aboutsection h2, p{
+  margin-left: 40%;
+	transform: translateX(-200%);
+	opacity: 0;
+	animation: slide-in-anim 1.5s ease-out forwards;
+}
+@keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-45%);
+	}
+	75% {
+		transform: translateX(-52%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
+.services .card-body {
+  z-index: 10;
+  background: #fff;
+  border-top: 6px solid #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin-top: -100px;
+  margin-left: 30px;
+  width: calc(100% - 60px);
+}
+.services .card-img img {
+  max-width: 100%;
+  max-height: 300px;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover{
+  transform: scale(1.1);
+  border-top: 2px solid #fdc134;
+}
+.contacts a{
+  text-decoration: none;
+  color: #000;
+}
+.contacts a:hover{
+  color: #fff;
+}
+#contact {
+  background-color: aqua;
+}
+.skill-img img{
+  width: 50%;
+}
